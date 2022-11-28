@@ -3,79 +3,43 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
 
 //use only the available space inside the 400x400 frame */
+:root{
+    --menu-speed: .75s;
+}
+
 *{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
 }
 
 body{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container{
-	width: 400px;
-	height: 400px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-image: linear-gradient(to bottom left, red,     rgba(255, 255, 0, 0.593));
-	border-radius: 8px;
-}
-.big{
-	font-size: 80px;
-	font-weight: bolder;
-    line-height: 55px;
-}
-.small{
-	font-size: 24px;
-	font-weight:  bold;
-	font-style: uppercase;
-	letter-spacing: .5px;
-}
-.number{
-    position: relative;
+    width: 400px;
+    height: 400px;
     display: flex;
-    margin: 4px;
+    justify-content: center;
+    align-items: center;
+    /*flex-direction: column;*/
+    background-image: linear-gradient(to bottom left, rgb(190, 0, 255), rgba(255, 255, 0, 0.5));
+    border-radius: 8px;
 }
-.one{
-    width: 24px;
-    height: 100px;
-    background-color: black;
-    border-radius: 5px;
-    transform: translate(14px);
-    box-shadow: 0 0 20px #ffffff40;
-    z-index: 3;
-}
-.one-stroke{
-    width: 24px;
-    height: 50px;
-    background-color: black;
-    border-radius: 5px;
-    position: absolute;
-    transform: rotateZ(45deg);
-    top: -.5px;
-}
-.zero{
+
+.bar-one, .bar-two, .bar-three{
+    height: 10px;
     width: 100px;
-    height: 100px;
-    border: 24px solid black;
-    border-radius: 50%;
+    background-color: black;
+    margin: 12px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(106, 101, 101, 0.661);
 }
-.zero-one{
-    transform: translate(10px);
-    box-shadow: 0 0 20px #ffffff40;
-    z-index: 2;
+.icon{
+    cursor: pointer;
 }
-.zero-two{
-    transform: translate(-9px);
-    box-shadow: 0 0 20px #ffffff40;
-}
-
-
-/* annoying 
